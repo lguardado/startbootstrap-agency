@@ -1,10 +1,13 @@
 // Styling for the team section
 .team-member {
+  .portfolio-link {
+    color: #298be4;
+  }
   margin-bottom: 50px;
   text-align: center;
   img {
-    width: 225px;
-    height: 225px;
+    width: 150px;
+    height: 150px;
     border: 7px solid $white;
   }
   h4 {

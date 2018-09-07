@@ -1,5 +1,8 @@
 // Styling for the timeline section
 .timeline {
+  .timeline-item {
+    padding-bottom: 300px;
+  }
   position: relative;
   padding: 0;
   list-style: none;
@@ -19,7 +22,7 @@
     margin-bottom: 50px;
     &:after,
     &:before {
-      display: table;
+      display: none;
       content: ' ';
     }
     &:after {
@@ -84,6 +87,9 @@
     }
   }
   .timeline-heading {
+    .portfolio-link {
+      color: #298be4;
+    }
     h4 {
       margin-top: 0;
       color: inherit;
@@ -93,12 +99,16 @@
     }
   }
   .timeline-body {
+    .portfolio-link {
+      color: #298be4;
+    }
      > ul,
     > p {
       margin-bottom: 0;
     }
   }
 }
+
 @media(min-width:768px) {
   .timeline {
     &:before {

@@ -1,5 +1,8 @@
 // Styling for the navbar
 #mainNav {
+  .lang-section {
+    display: flex;
+  }
   background-color: $gray-900;
   .navbar-toggler {
     font-size: 12px;
@@ -21,6 +24,23 @@
       color: darken($primary, 10%);
     }
   }
+  .navbar-lang {
+    cursor: pointer;
+    padding: .5em;
+    font-size: 1em;
+    color: $primary;
+    @include script-font;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+  .navbar-language-selected {
+    outline: auto;
+    background: #505067;
+  }
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -40,6 +60,7 @@
 }
 @media(min-width:992px) {
   #mainNav {
+
     padding-top: 25px;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -49,6 +70,15 @@
     background-color: transparent;
     .navbar-brand {
       font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .navbar-lang {
+      color: white;
+      margin: .3em .3em .3em 0;
+      padding: .3em .3em .3em 0;
+      font-size: 1em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;

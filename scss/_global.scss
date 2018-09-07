@@ -4,6 +4,10 @@ body {
   @include body-font;
 }
 
+.contact-link {
+  color: #298be4;
+}
+
 p {
   line-height: 1.75;
 }
@@ -30,6 +34,9 @@ h6 {
 }
 
 section {
+  &.print-section {
+    padding: 300px 0;
+  }
   padding: 100px 0;
   h2.section-heading {
     font-size: 40px;
@@ -47,7 +54,7 @@ section {
 }
 @media(min-width:768px) {
   section {
-    padding: 150px 0;
+    padding: 250px 0;
   }
 }
 
